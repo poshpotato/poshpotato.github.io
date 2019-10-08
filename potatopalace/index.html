@@ -3,7 +3,8 @@
 <head>
 <script>
 function myFunction() {
-console.log("it worked!!!")
+console.log("it worked!!!");
+document.getElementById("return").innerhtml = "fuck";
 }
 </script>
 <title>Potato Palace</title>
@@ -12,7 +13,7 @@ console.log("it worked!!!")
   <p>Welcome to the Potato Palace, you fool.</p>
   <button type="button" onclick="myFunction()">Explore</button>
   <div class="return">
-    <p></p>
+    <p id="return"></p>
   </div>
 </body>
 </html>
