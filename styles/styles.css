@@ -1,0 +1,16 @@
+.starting {
+background-color : #FFFF00;
+}
+.ballroom {
+background-image : url("../images/Prospit.jpg");
+background-repeat : no-repeat;
+background-size : 100%;
+}
+.void {
+display : none;
+}
+.visible {
+}
+.italic {
+  font-style: italic;
+}
