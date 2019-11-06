@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="script.js"> </script>
-  <link rel="stylesheet" href="styles.css">
-  <title>Potato Palace</title>
+    <script src="../scripts/exploration.js"></script>
+    <script src="../scripts/timer.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Potato Palace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-  <p>Welcome to the Potato Palace, you fool.</p>
-  <button type="button" onclick="myFunction()">Explore</button>
-  <p id="return"></p>
+<body id="fullPage" class="starting">
+    <p class="italic">Welcome to the Potato Palace, you fool.</p>
+    <button type="button" onclick="explore()">Explore</button>
+    <p id="return"></p>
+    <p>Timer! Press the button below to start the timer.</p>
+    <p id="timerOutput" class="italic"></p>
+    <button type="button" onclick="timer(1000)" id="timerButton" class="visible">Start Timer.</button>
 </body>
 </html>
