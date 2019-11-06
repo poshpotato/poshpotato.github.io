@@ -14,3 +14,9 @@ display : none;
 .italic {
   font-style: italic;
 }
+.heading {
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
