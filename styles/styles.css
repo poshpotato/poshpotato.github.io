@@ -20,3 +20,6 @@ display : none;
     text-decoration: underline;
     font-weight: bold;
 }
+.mainImage {
+  text-align : center;
+}
