@@ -6,7 +6,7 @@ var ballSpeed = 2;
 var dx = ballSpeed;
 var dy = -ballSpeed;
 var ballRadius = 10;
-const ballColor = ["#A10000", "#A25203", "#A1A100", "#FF0000", "#416600", "#078446", "#008282", "#004182", "#0021CB", "#631DB4", "#6A006A", "99004d"]
+const ballColor = ["#A10000", "#A25203", "#A1A100", "#FF0000", "#416600", "#078446", "#008282", "#004182", "#0021CB", "#631DB4", "#6A006A",]
 var ballColorStep = 0;
 var paddleHeight = 10;
 var paddleWidth = 75;
@@ -53,7 +53,7 @@ function drawBricks() {
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-    ctx.fillStyle = ballColor[ballColorStep];
+    ctx.fillStyle = ballColor[score%11];
     ctx.fill(); 
     ctx.closePath();
 }
@@ -151,7 +151,6 @@ function collisionDetection() {
                 if(x+ballRadius > b.x && x-ballRadius < b.x+brickWidth && y+ballRadius > b.y && y-ballRadius < b.y+brickHeight) {
                     dy = -dy;
                     b.status = 0;
-                    ballColorStep += 1;
                     score++
                     if(score == brickRowCount*brickColumnCount*level) {
                         alert("YOU WIN! CONGRATULATIONS!");
