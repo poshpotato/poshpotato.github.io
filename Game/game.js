@@ -64,7 +64,7 @@ function draw() {
             dy -= 0.1;
         } 
         else {
-            alert("GAME OVAH, DAHLING.");
+            alert("GAME OVAH.");
             document.location.reload();
             clearInterval(update);
         }
